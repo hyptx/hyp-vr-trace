@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: VR Trace
+Plugin Name: Hyp VR Trace
 Plugin URI: https://github.com/hyptx/vr-trace
 Description: A php debugging tool for wordpress developers
-Version: 1.2.1
+Version: 1.2
 Author: Adam J Nowak
 Author URI: http://hyperspatial.com
 License: GPL2
@@ -16,7 +16,7 @@ function vr_init(){
 	global $vr_counter;
 	if($_SERVER['HTTPS'] == 'on') $vr_url = str_replace('http','https',WP_PLUGIN_URL);
 	else $vr_url = WP_PLUGIN_URL; 
-	define('VR_URL',$vr_url . '/vr-trace/');
+	define('VR_URL',$vr_url . '/hyp-vr-trace/');
 	define('VR_ADMIN_URL',get_bloginfo('wpurl') . '/wp-admin/');
 	$vr_action = get_option('vr_action');
 	if(!$vr_counter && get_option('vr_switch') == 'on') add_action($vr_action,'vr_print_trace');
