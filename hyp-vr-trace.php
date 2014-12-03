@@ -3,7 +3,7 @@
 Plugin Name: Hyp VR Trace
 Plugin URI: https://github.com/hyptx/hyp-vr-trace
 Description: A php debugging tool for wordpress developers
-Version: 1.2
+Version: 1.2.1
 Author: Adam J Nowak
 Author URI: http://hyperspatial.com
 License: GPL2
