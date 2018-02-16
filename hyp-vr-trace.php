@@ -14,7 +14,7 @@ require_once('vr-trace-core.php');
 //Init
 function vr_init(){
 	global $vr_counter;
-	if($_SERVER['HTTPS'] == 'on') $vr_url = str_replace('http','https',WP_PLUGIN_URL);
+	if($_SERVER['HTTPS'] == 'on') $vr_url = str_replace('http:','https:',WP_PLUGIN_URL);
 	else $vr_url = WP_PLUGIN_URL; 
 	define('VR_URL',$vr_url . '/hyp-vr-trace/');
 	define('VR_ADMIN_URL',get_bloginfo('wpurl') . '/wp-admin/');
